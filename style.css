@@ -47,9 +47,9 @@ header h1 {
   top: 75px;
   z-index: -1;
   padding: 1rem 0 1.2rem 0;
-  background-image: linear-gradient(#d60303, #800000);
+  /* background-image: linear-gradient(#d60303, #800000);
   border-bottom-left-radius: 80% 20%;
-  border-bottom-right-radius: 80% 20%;
+  border-bottom-right-radius: 80% 20%; */
   box-shadow: 0px 10px 50px #000000;
 }
 
@@ -90,10 +90,6 @@ header h1 {
     position: fixed;
     z-index: -1;
     padding: .8rem 0 1.5rem 0;
-    background-image: linear-gradient(#d60303, #800000);
-    border-bottom-left-radius: 80% 20%;
-    border-bottom-right-radius: 80% 20%;
-    box-shadow: 0px 10px 50px #000000;
   }
   .menu a{
     font-size: .9rem;
@@ -109,7 +105,6 @@ header h1 {
 
 @media only screen and (max-width: 700px) {
   header h1 {
-    /* padding: 20px 0 20px 0; */
     font-size: 1.5rem;
     font-weight: 50;
     letter-spacing: 20px;
@@ -118,13 +113,11 @@ header h1 {
   }
   .menu {
     width: 100%;
-    height: 90px;
+    height: 95px;
     background-color: #2f2f2f;
     position: fixed;
-    /* top: 85px; */
     z-index: -1;
     padding: 1rem 1rem 1rem 1rem;
-    box-shadow: 0px 10px 50px #000000;
   }
   .menu a{
     font-size: .9rem;
@@ -139,19 +132,39 @@ header h1 {
 
 }
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 500px) {
   header h1 {
-    /* padding: 20px 0 20px 0; */
-    /* font-size: 1.5rem; */
-    /* font-weight:300; */
     letter-spacing: 8px;
     text-transform: uppercase;
     text-shadow: 1px 1px 6px rgb(251, 255, 0);
   }
   
   .menu {
-    /* flex-direction: column; */
+    flex-direction: row;
     flex-wrap: wrap;
     align-self: auto;
+  }
+  
+  .menu a{
+    font-size: .6rem;
+    margin: 6px 3px;
+    padding: 7px 12px;
+    letter-spacing: .1rem;
+    border-radius: 10px;
+    box-shadow: 0px 2px#eee;
+    transition: .25s ease-in-out;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  header {
+    height: 80px;
+  }
+  .menu {
+    height: 66px;
+  }
+  .menu a {
+    padding: 6px;
+    margin: 2px;
   }
 }
