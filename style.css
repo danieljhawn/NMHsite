@@ -37,6 +37,7 @@ header h1 {
 }
 
 .postTopper {
+  border-radius: 20px 20px 0px 0px;
   padding: 20px;
   margin-bottom: 10px;
   border-bottom: 1px solid #eee;
@@ -64,6 +65,11 @@ header h1 {
   margin: 20px;
   background-color: #1a1a1a;
   border-radius: 20px;
+}
+
+.postBody {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 
